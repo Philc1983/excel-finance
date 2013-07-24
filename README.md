@@ -1,2 +1,2 @@
-excel-finance
+Excel Finance utilities
 =============
