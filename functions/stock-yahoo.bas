@@ -1,4 +1,10 @@
-Public Function GetTickerPrice(ticker As String, qDate As Date, qField As String)
+' (c) 2013 Fincluster (fincluster.com)
+' Usage
+'	=GetTickerData(TICKER, DATE, FIELD)
+'   Example
+'		=GetTickerData(AAPL, "2013-1-7", "Close")
+
+Public Function GetTickerData(ticker As String, qDate As Date, qField As String)
     Dim occUrl As String
      occUrl = "http://ichart.finance.yahoo.com/table.csv?s=" & ticker & _
         "&a=" & (Month(qDate) - 1) & "&b=" & Day(qDate) & "&c=" & Year(qDate) & _
@@ -26,7 +32,7 @@ Public Function GetTickerPrice(ticker As String, qDate As Date, qField As String
           End If
       Next i
     End If
-    GetTickerPrice = result
+    GetTickerData = result
 End Function
 
 Public Function HTTPGet(sUrl As String, sQuery As String) As String
