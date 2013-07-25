@@ -1,8 +1,12 @@
+' GetTickerData
+' Excel Yahoo Stock Quote function takes (ticker, date, field) as input and outputs the result
 ' (c) 2013 Fincluster (fincluster.com)
+'
 ' Usage
 '	=GetTickerData(TICKER, DATE, FIELD)
-'   Example
-'		=GetTickerData(AAPL, "2013-1-7", "Close")
+'	Fields: Close,Open,Low,High,Volume
+' Example
+'	=GetTickerData(AAPL, "2013-01-07", "Close")
 
 Public Function GetTickerData(ticker As String, qDate As Date, qField As String)
     Dim occUrl As String
