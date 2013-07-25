@@ -1,4 +1,4 @@
-Excel Finance utilities
+Excel Finance functions
 =============
 
 Excel Finance is a set of free-to-use Excel VBA functions and utilities for Financial Analysis
